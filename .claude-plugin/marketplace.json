@@ -1,0 +1,6 @@
+{
+  "name": "upty",
+  "description": "Official Upty plugins for Claude Code",
+  "owner": { "name": "Upty", "url": "https://upty.io" },
+  "plugins": [{ "name": "upty", "source": "./plugins/upty", "description": "Monitor your services with Upty MCP over OAuth, with workspace health and monitor workflows." }]
+}

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "upty": { "type": "http", "url": "https://mcp.upty.io/mcp" }
+  }
+}
