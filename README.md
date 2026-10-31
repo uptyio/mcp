@@ -1,10 +1,15 @@
 # Upty MCP plugin
 
+[![License: MIT](https://img.shields.io/github/license/uptyio/mcp?color=blue)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-upty.io%2Fdocs%2Fmcp-2563eb)](https://upty.io/docs/mcp)
+[![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-d97757)](#install)
+[![Website](https://img.shields.io/badge/website-upty.io-2563eb)](https://upty.io)
+
 Connect your monitoring workspace to a compatible AI assistant through [Upty](https://upty.io).
 
 This repository contains the **public Claude Code plugin**, connection configuration and workflow skills. The hosted MCP server and Upty backend are maintained separately. No server code, credentials or customer data are included here.
 
-## Claude Code
+## Install
 
 ```sh
 claude plugin marketplace add uptyio/mcp
@@ -50,6 +55,15 @@ The skills support the task you request. They do not grant additional permission
 Open **Upty → Integration & API → MCP · Connected apps** to inspect and disconnect applications. Revocation ends that connection's access. Removing a workspace membership or changing its permissions also changes what the app may do. Actions are attributed to the user and connected application.
 
 Do not paste access tokens, heartbeat URLs, host tokens, passwords or channel credentials into an issue. Send only a redacted error and the affected tool name. See the [connection guide](https://upty.io/docs/mcp).
+
+## Documentation
+
+- [Overview](https://upty.io/docs/mcp)
+- [Connect your assistant](https://upty.io/docs/mcp/connect-your-assistant)
+- [Tools](https://upty.io/docs/mcp/tools)
+- [Example prompts](https://upty.io/docs/mcp/examples)
+- [Safety and limits](https://upty.io/docs/mcp/safety-and-limits)
+- [Troubleshooting](https://upty.io/docs/mcp/troubleshooting)
 
 ## License
 
