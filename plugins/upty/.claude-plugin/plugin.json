@@ -1,10 +1,10 @@
 {
   "name": "upty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect Claude Code to Upty MCP over OAuth. Inspect monitoring health and manage monitors within your workspace permissions.",
   "author": { "name": "Upty", "url": "https://upty.io" },
   "homepage": "https://upty.io/docs/mcp",
   "repository": "https://github.com/uptyio/mcp",
   "license": "MIT",
-  "keywords": ["upty", "mcp", "monitoring", "uptime", "status-pages"]
+  "keywords": ["upty", "mcp", "monitoring", "uptime", "status-pages", "dnssec"]
 }

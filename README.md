@@ -37,10 +37,16 @@ Examples include an MCP custom connector in compatible web assistants, or a remo
 - “Which monitors are down or degraded in this workspace?”
 - “Show the response-time and uptime history for the checkout API.”
 - “Create an HTTPS monitor for my website using the regions and interval my plan allows.”
+- “Create a DNSSEC monitor for cloudflare.com, check every 15 minutes and warn 7 days before signatures expire.”
+- “Monitor https://www.githubstatus.com every 5 minutes, watching only the Git Operations component.”
 - “Pause the maintenance check until I resume it.”
 - “List the maintenance windows and public status pages.”
 
 The tool list returned by your connection is authoritative. Read-only connections cannot write; role and plan restrictions still apply to Full access. Some operations need whole-workspace permissions.
+
+DNSSEC and External Status Page use the existing `create_monitor`, `update_monitor` and diagnostic tools. External Status Page requires **Pro or Business**; it is unavailable on Free. DNSSEC is available on Free, Pro and Business, but MCP/API access remains a separate plan entitlement. The tool count remains 29.
+
+For DNSSEC, use `type: "dnssec"`, a domain `target` and `warn_days` (default 7). For External Status Page, use `type: "external_status_page"`, a public page/feed URL and optional `external_status_page` settings: `provider`, `component_names` and `component_group`. When updating that nested object, send its complete intended settings together.
 
 ## Included skills
 
@@ -62,6 +68,8 @@ Do not paste access tokens, heartbeat URLs, host tokens, passwords or channel cr
 - [Connect your assistant](https://upty.io/docs/mcp/connect-your-assistant)
 - [Tools](https://upty.io/docs/mcp/tools)
 - [Example prompts](https://upty.io/docs/mcp/examples)
+- [DNSSEC monitoring](https://upty.io/docs/monitors/dnssec)
+- [External Status Page monitoring](https://upty.io/docs/monitors/external-status-page)
 - [Safety and limits](https://upty.io/docs/mcp/safety-and-limits)
 - [Troubleshooting](https://upty.io/docs/mcp/troubleshooting)
 
